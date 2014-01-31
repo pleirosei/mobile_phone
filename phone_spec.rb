@@ -3,6 +3,7 @@ require_relative 'phone'
 describe Phone do
 
 	before do
+		$stdout = StringIO.new
 		@phone = Phone.new("Moto X", "Motorola")
 	end
 
